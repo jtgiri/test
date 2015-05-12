@@ -1,3 +1,3 @@
 source "https://supermarket.chef.io"
 
-cookbook 'ops-test',git: "git@github.com:lihao-nclouds/test.git",  rel: 'ops-cookbooks/ops-test'
+cookbook 'ops-test',git: "git@github.com:lihao-nclouds/test.git",  rel: 'ops-test/ops-test'
