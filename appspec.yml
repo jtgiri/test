@@ -1,0 +1,14 @@
+os: linux
+files:
+  - source: /
+    destination: /var/www/app
+permissions:
+  - object: /var/www/app/scripts/
+    pattern: "**"
+    mode: 755
+hooks:
+  BeforeInstall:
+    - location: scripts/backup.sh
+  AfterInstall:
+    - location: scripts/restore.sh
+    - location: scripts/restart.sh
