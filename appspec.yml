@@ -9,3 +9,5 @@ permissions:
     pattern: "*.sh"
     mode: 755
 
+BeforeInstall:
+ - location: scripts/stop.sh
