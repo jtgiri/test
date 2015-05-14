@@ -8,6 +8,6 @@ permissions:
   - object: /var/www/app/scripts/
     pattern: "*.sh"
     mode: 755
-
-BeforeInstall:
- - location: scripts/stop.sh
+hooks:
+  BeforeInstall:
+   - location: scripts/stop.sh
