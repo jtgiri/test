@@ -9,7 +9,3 @@ permissions:
     pattern: "*.sh"
     mode: 755
 
-hooks:
-  BeforeInstall:
-  AfterInstall:
-
