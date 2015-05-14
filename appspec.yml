@@ -11,12 +11,5 @@ permissions:
 
 hooks:
   BeforeInstall:
-    - location: scripts/stop.sh
-    - location: scripts/backup.sh
-      runas: root
   AfterInstall:
-    - location: scripts/restore.sh
-      runas: root
-    - location: scripts/start.sh
-      runas: root
 
